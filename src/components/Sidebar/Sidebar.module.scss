@@ -1,0 +1,54 @@
+@import '../../imports';
+
+.sidebar{
+  background-color: #000;
+  height: 100%;
+  overflow-Y: auto;
+  width: 250px;
+  box-shadow: 2px 1px 10px rgba($color: #000000, $alpha: 0.7);
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+
+  ul{
+    @include flex($direction: column, $gap: 10px)
+  }
+  
+  li a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  li{
+    svg{
+      font-size: 20px;
+    }
+  }
+
+  li a:hover{
+    background-color: rgba($color: #fff, $alpha: 0.3);
+  }
+
+  .menu, .playlists {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+
+    li a{
+      @include flex($align: center, $gap: 15px);
+    }
+  }
+
+  .menu::after{
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 1px;
+    bottom: 0;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

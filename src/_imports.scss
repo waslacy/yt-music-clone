@@ -1,0 +1,36 @@
+$lightGray: #373739;
+$mediumGray: #19191a;
+$darkGray: #020202;
+
+$darkCyan: #60d4ea;
+$lightCyan: #9ae5f3;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: $darkGray;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 40px;
+}
+
+@mixin flex($justify: inherit, $align: inherit, $direction: row, $gap: 10px){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}

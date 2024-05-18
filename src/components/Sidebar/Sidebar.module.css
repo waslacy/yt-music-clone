@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 40px;
+}
+
+.sidebar {
+  background-color: #000;
+  height: 100%;
+  overflow-Y: auto;
+  width: 250px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+.sidebar ul {
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar li a {
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.sidebar li svg {
+  font-size: 20px;
+}
+.sidebar li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.sidebar .menu, .sidebar .playlists {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.sidebar .menu li a, .sidebar .playlists li a {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.sidebar .menu::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 1px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=Sidebar.module.css.map */

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 40px;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #020202, #19191a);
+}
+.App .main-content {
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: row;
+  gap: 10px;
+  height: calc(100vh - 84px);
+}/*# sourceMappingURL=index.css.map */
